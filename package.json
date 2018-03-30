@@ -1,0 +1,26 @@
+{
+  "name": "detect-tor",
+  "version": "1.0.0",
+  "description": "Detects if connection is a TOR exit node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "tor",
+    "exit",
+    "node",
+    "detect",
+    "proxy"
+  ],
+  "author": "Pawel Maciulewski",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {}
+}
