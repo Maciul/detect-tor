@@ -2,12 +2,23 @@
 
 Easy to use library to identify TOR network connection. 
 
-### Usage: 
+### Usage Example: 
 
 ```js
 const detectTor = require( 'detect-tor' ) 
-detectTor.isTor( '127.0.0.1' ) // true or false
+
+function testTor() {
+    console.log( detectTor.isTor( '127.0.0.1' ) ) // true or false    
+}
+
+require( 'http' )
+    .createServer( testTor )
+    .listen( 8000 )
+    .once( 'listening', ()=> console.log( 'Tor detection server enabled on ' + 8000 ) );
 ```
+
+curl localhost:8000 
+
 ### About
 
 List of exit addresses is automatically updated every 24hrs. 
