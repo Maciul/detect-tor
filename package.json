@@ -1,6 +1,6 @@
 {
   "name": "detect-tor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detects if connection is a TOR exit node.",
   "main": "index.js",
   "scripts": {
